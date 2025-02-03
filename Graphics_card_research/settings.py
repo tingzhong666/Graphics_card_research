@@ -89,4 +89,11 @@ ROBOTSTXT_OBEY = True
 
 # Set settings whose default value is deprecated to a future-proof value
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
-FEED_EXPORT_ENCODING = "utf-8"
+FEED_EXPORT_ENCODING = "utf-8-sig"
+
+FEED_EXPORT_FIELDS = {
+    'name': '型号',
+    'rating': '性价比',
+    'performance': '性能',
+    'year': '年份',
+}
